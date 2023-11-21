@@ -1,0 +1,9 @@
+.idea
+.iws
+.iml
+.ipr
+.class
+target/*
+!target/myname-jar-with-dependencies.jar
+.DS_STORE /src/main/resources/log
+/out
