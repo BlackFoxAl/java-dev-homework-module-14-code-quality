@@ -5,11 +5,10 @@ import java.util.Arrays;
 public class Board {
     private static final int DEFAULT_SIZE = 3;
     private static final char EMPTY_FIELD = ' ';
-    private static final String VERTICAL_FIELD_SEPARATOR = " │ "; //vertical field separator
+    private static final String VERTICAL_FIELD_SEPARATOR = " │ ";
     private static final String TWO_SPACES = " ".repeat(2);
     private static final String TREE_SPACES = " ".repeat(3);
-    private static final char HORIZONTAL_LINE = '—';
-    private static final char CROSS_LINE = '┼';
+
     private int size;
     private final char[][] field;
 
@@ -48,9 +47,6 @@ public class Board {
 
     public boolean placeAvailable(Point point) {
         return field[point.getPointY() - 1][point.getPointX() - 1] == EMPTY_FIELD;
-    }
-    public boolean gameOver(Point point,char figure) {
-        return false;
     }
 
     public boolean resultOfMove(Point point,char figure) {

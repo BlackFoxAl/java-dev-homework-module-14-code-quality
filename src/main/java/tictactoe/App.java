@@ -20,7 +20,7 @@ public class App {
         int sizeBoard = newBoard.getSize();
         System.out.println(newBoard);
         Point point = new Point();
-        BotPlayer botPlayer = new BotPlayer(newBoard, O);
+        BotPlayer botPlayer = new BotPlayer(newBoard);
         System.out.println("Your figure is X, mine is O. Let's begin!");
         do {
             counter++;
@@ -36,6 +36,7 @@ public class App {
             System.out.println(newBoard);
             if (!winnerPlayer && counter <= sizeBoard * sizeBoard / 2) {
                 point = botPlayer.setFigure();
+                System.out.println("OK, my turn ->");
                 newBoard.setFigure(point, O);
                 System.out.println(newBoard);
                 if (counter > 2) {
