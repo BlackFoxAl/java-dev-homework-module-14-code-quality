@@ -36,4 +36,5 @@ public class ConsoleInput {
             System.out.print("Wrong! Enter a number from 1 to " + limitValue + " : ");
         }
     }
+
 }

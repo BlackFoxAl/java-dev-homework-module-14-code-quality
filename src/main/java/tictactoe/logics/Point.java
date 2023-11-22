@@ -31,4 +31,5 @@ public class Point {
     public String toString() {
         return "X " + pointX +" : Y " + pointY;
     }
+
 }
